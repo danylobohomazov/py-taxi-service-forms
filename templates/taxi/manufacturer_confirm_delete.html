@@ -3,7 +3,7 @@
 {% block content %}
   <h1>Delete Manufacturer</h1>
   <p>Are you sure, you want to delete Manufacturer {{ manufacturer.name }}?</p>
-  <a href="{{ request.META.HTTP_REFERER }}"> CANCEL </a>
+  <a href="javascript:history.back()"> CANCEL </a>
   <br>
   <form action="" method="post">
     {% csrf_token %}
